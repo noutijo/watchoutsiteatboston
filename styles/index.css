@@ -1,0 +1,758 @@
+
+:root{
+    --firstn-color:#545871;
+    --first-color:#2d3044;
+    --second-color:#9597A6;
+    --third-color:#DADBE6;
+    --fourth-color:#F0F1F7;
+    --fifth-color:#B8817D;
+    --sixth-color:#EBD0CE;
+    --seventh-color:#E6DBDA;
+    --eigth-color:#F7ECEB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-family: 'Montserrat','Josefin Sans', sans-serif;
+}
+
+
+
+/*-----------Navigation Bar-------------*/
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    height: 45px;
+    width: auto;
+    padding-left: 30px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+    color: white !important;
+    font-weight: 300;
+    transition: 0.5s color;
+}
+
+#nav-bar ul li a:hover {
+    color: var(--fifth-color) !important;
+}
+
+.navbar {
+    background:var(--first-color);
+}
+
+#nav-bar .navbar-toggler {
+    border: none !important;
+    outline: none;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*-----------End Navigation Bar-------------*/
+
+/*--------------Banner Section--------------*/
+#banner{
+    background-color: var(--first-color);
+    color: white;
+}
+#banner .slogan{
+    font-size: 14px;
+    font-weight:300;
+    color: var(--fifth-color);
+}
+#banner .left-contain{
+    margin-left: 50px;
+    margin-top: 50px
+}
+#banner .col-md-6{
+    background-color: transparent;
+}
+
+.banner-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+#banner .lien {
+    text-decoration: none;
+    color: #B8817D;
+}
+
+#banner .img-banner-right {
+    background-image: url('../imgs/event02.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner .container-btn-reserve {
+    margin-top: 20px !important;
+
+}
+
+#banner .btn-reserve {
+    padding: 10px 30px 10px 30px;
+    background-color: var(--fifth-color);
+    border-color: transparent;
+    border-radius: 40px;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+
+/*--------------End Banner Section--------------*/
+
+/*--------------Information Section--------------*/
+#information  {
+    background-color:var(--thir-color);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+#information .row{
+    box-sizing: border-box;
+    margin: auto 3% auto 3% ;
+    padding: 3%;
+}
+#information .fa{
+    color:#B8817D;
+    font-size:30px;
+    margin-top: 10px;
+}
+#information .contain-panel {
+   margin-top: 2%;
+   padding: none !important;
+}
+#information .title-panel_ {
+    color: rgba(0, 0, 0, 0.8);
+}
+#information .panel_{
+ width: 100%;
+ height: auto;
+ padding:10px 20px 10px 20px;
+ background: white;
+ color: rgba(0, 0, 0, 0.5);
+ box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+ border-radius: 6px;
+}
+
+/*--------------End Information Section--------------*/
+
+/*--------------Film Information Section--------------*/
+
+#film-information {
+    background-color: var(--eigth-color);
+    padding: 50px 50px 100px 50px;
+    color: var(--first-color);
+    margin-top: 3%;
+}
+#film-information .title-film-information:before {
+    content:"";
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    display: block;
+    top : calc(50%-10px);
+    margin-right: 0px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+#film-information .title-film-information {
+    font-size: 24px;
+    padding: 10px;
+}
+
+#film-information .body-film-information {
+    font-weight: 300;
+
+}
+#film-information .btn {
+    background-color: transparent;
+    border-color: var(--fifth-color);
+    color:var(--first-color);
+    transition: 0.5s box-shadow;
+}
+#film-information .btn:hover {
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+}
+
+/*--------------End Film Information Section--------------*/
+
+/*--------------Scheduled Films--------------*/
+
+/*Tab*/
+
+#cheduledfilms {
+    padding: 60px 0;
+}
+
+#cheduledfilms .section-title {
+    text-align: left;
+    color: var(--first-color);
+    margin-bottom: 50px;
+}
+#cheduledfilms .section-title:before {
+   content:'';
+   box-sizing: border-box;
+   width: 20px;
+   height: 20px;
+   display: block;
+   top : calc(50%-10px);
+   margin-right: 0px;
+   transform: rotate(45deg);
+   background-color: white;
+}
+
+#cheduledfilms {
+    background: var(--fifth-color);
+    color: #eee;
+}
+
+#cheduledfilms h6.section-title {
+    color: #eee;
+}
+
+#cheduledfilms .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cheduledfilms .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color:var(--first-color);
+    font-size: 20px;
+}
+
+/*Cards*/
+
+#cheduledfilms .profile-pic {
+     margin-top: 25px;
+     border: 1px solid #f1f1f1;
+     border-radius: 10px;
+     padding: initial;
+     transition: 1s zoom;
+}
+#cheduledfilms .profile-pic:hover {
+     zoom: 1.2;
+
+}
+
+#cheduledfilms .profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+#cheduledfilms .profile-pic .img-box img:hover {
+    cursor: pointer;
+}
+
+#cheduledfilms .profile-pic h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff !important;
+}
+
+#cheduledfilms .profile-pic h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#cheduledfilms .fa {
+    height: 30px;
+    width: 30px;
+    color: var(--fifth-color);
+    background: #fff;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+#cheduledfilms .img-box ul {
+    padding: 15px 0px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(-90%);
+    transform: translateY(40%);
+}
+
+#cheduledfilms .img-box ul li {
+    padding: 5px;
+    display: inline-block;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+
+#cheduledfilms .img-box:hover ul li {
+    opacity:1;
+}
+
+#cheduledfilms .img-event {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 40%;
+}
+
+#cheduledfilms .title-event {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#cheduledfilms  .month-event {
+    font-weight: bold;
+    text-align: left;
+}
+
+#cheduledfilms .day-event{
+    opacity: 0.6;
+    font-weight: bold;
+    text-align: left;
+}
+
+#cheduledfilms .event-name {
+    color: var(--first-color);
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#cheduledfilms .event-time{
+    color: var(--firstn-color);
+    opacity: 0.8;
+}
+#cheduledfilms .last-updated {
+    opacity: 0.7;
+    font-size: 10px;
+}
+
+/*--------------End Scheduled Films--------------*/
+
+/*--------------Reserve Seat Section--------------*/
+
+
+#reserve-seat{
+    padding: 50px 50px 100px 50px;
+    margin-top: 2%;
+}
+#reserve-seat .form-block {
+    background-color: #f1f1f1;
+    padding: 50px 50px 100px 50px;
+    color: var(--first-color);
+}
+
+#reserve-seat .title-reserve:before {
+    color: var(--first-color);
+    font-weight: 300;
+}
+
+#reserve-seat .title-reserve:before {
+    content: "";
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    display: block;
+    top: calc(50%-10px);
+    margin-left: 0px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+#reserve-seat span {
+    
+    color: rgba(0,0, 0,0.5);
+    
+}
+#reserve-seat span:before {
+    
+    content: "|";
+    width: 1px;
+    height: 10px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+#reserve-seat .btn {
+
+   background-color: transparent;
+   border-color: var(--fifth-color);
+   color:var(--first-color);
+   transition: 0.5s box-shadow;
+
+}
+#reserve-seat .btn:hover {
+
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+
+}
+#reserve-seat .form-group {
+   margin-top: 20px;
+}
+#reserve-seat input[type="email"],
+#reserve-seat input[type="text"] {
+    height: 45px;
+     border-style: none;
+     box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+}
+#reserve-seat img {
+    width: 100%;
+    height: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 10%;
+    /* Full width */
+    height: 10%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+#myModal .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 5px;
+}
+
+/* The Close Button */
+#myModal .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#myModal .close:hover,
+#myModal .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myModal #messagesError {
+    padding-right: 20px;
+}
+
+/* IMG*/
+
+#myModal .img-gif-success {
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+/*** @@@ MEDIA QUERY **/
+
+@media only screen and (max-width:900px) {
+
+    /* Modal Content */
+   #myModal  .modal-content {
+        width: 80%;
+    }
+
+    #myModal .img-gif-success {
+        align-self: center;
+        float: none;
+    }
+
+}
+
+/*--------------End Reserve Seat Section--------------*/
+
+/*--------------Newsletter--------------*/
+
+#newsletter{
+    padding: 50px 5% 50px 5%;
+    background-color: var(--first-color);
+    background-image: url("/imgs/slider1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#newsletter .content-form {
+    box-sizing: border-box;
+    padding:0px;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+    border-radius: 100px;
+}
+#newsletter input[type="email"] {
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: transparent;
+    border-color: transparent;
+    padding:20px;
+    width: 80%;
+    outline: none;
+    border-style: none;
+}
+#newsletter button {
+    box-sizing: border-box;
+    background-color: var(--first-color);
+    border-radius: 100px;
+    padding: 20px 3rem 20px 3rem !important;
+    margin: 10px;
+    right: 1%;
+    transition: 0.5s background-color;
+    border-color: var(--fifth-color);
+}
+#newsletter button:hover{
+    background-color: var(--firstn-color);
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+}
+#newsletter h1 {
+    color:white;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/*--------------End Newsletter--------------*/
+
+/*-------------- News --------------------*/
+
+
+#news .post-entry-1-contents {
+    background-color: white;
+    padding: 15px;
+}
+#news .post-entry-1 {
+    box-shadow: 0 5px 25px rgba(34, 60, 47, .15);
+}
+#news .meta {
+  color: rgba(0, 0, 0, 0.3);
+}
+#news .news-description{
+    color: var(--first-color);
+    margin-top: 5px;
+}
+#news .more {
+    color: var(--fifth-color);
+    margin-top: 5px;
+    text-decoration: underline;
+    text-transform: uppercase;
+} 
+#news .more:hover {
+   color: var(--first-color);
+}
+#news h1:before {
+    content: "";
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    display: block;
+    top: calc(50%-10px);
+    margin-left: 0px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+
+/*-------------End News -----------------*/
+
+/*--------------News--------------*/
+
+
+
+/*--------------End News--------------*/
+
+/*--------------footer--------------*/
+
+#footer {
+    margin-top: 0%;
+    padding: 50px 5% 10px 5%;
+    background-color: var(--eigth-color);
+}
+#footer .fa{
+    color:#B8817D; 
+    font-size:20px;
+}
+#footer .fa:hover {
+    color: var(--first-color);
+    font-size: 20px;
+}
+.nooutidev,
+#footer .hearts,
+#footer .linksfooter {
+    color:var(--fifth-color);
+}
+#footer .nooutidev {
+    text-decoration: underline;
+}
+#footer .nooutidev:hover {
+    color: var(--first-color);
+}
+#footer .linksfooter {
+    margin-top: 10px;
+}
+#footer .logo {
+    box-sizing: border-box;
+    width: 20%;
+    height: auto;
+    padding: 5px;
+    transform: rotate(-45deg);
+    background-color:white;
+    -webkit-filter: grayscale(100%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    /* Firefox */
+
+}
+/*--------------footer--------------*/
+
+/*-------------- Medias Queries for Mobile --------------*/
+
+@media (max-width: 767.98px) {
+
+     /*Navigation bar*/
+     #nav-bar {
+         border-bottom: 0.1px solid rgb(255, 255, 255, 0.9);
+     }
+
+    /*Banner bae section*/
+    #banner .image-left-banner{
+        display: none !important;
+    }
+    .banner-title {
+        margin-top: 80px;
+    }
+   
+    /*information section*/
+    #information .row {
+        box-sizing: border-box;
+        margin: auto 5px auto 5px;
+        padding: 1px;
+    }
+    #information .panel_ {
+        padding: 40px auto 40px auto;
+    }
+
+    /*Film information*/
+   #film-information {
+       padding: 5px;
+   }
+
+   /*Films*/
+   #cheduledfilms .img-box ul li {
+       opacity: 1;
+   }
+
+   /*Reserve Seat(s)*/
+   #reserve-seat {
+        padding: 0px; 
+   }
+    #reserve-seat .form-block {
+      padding: 40px auto 40px auto;
+
+    }
+
+     /*Newsletters*/
+     #newsletter input[type="email"] {
+         width: auto;
+     }
+     #newsletter {
+         padding: 40px auto 40px auto;
+     }
+     #newsletter button {
+         padding: 20px 1rem 20px 1rem !important;
+
+     }
+
+}
+
+/*-------------- End Medias Queries for Mobile --------------*/
+
+/*-------------- Medias Query for Tablettes --------------*/
+
+@media (max-width: 991.98px) {
+
+    /*Banner section*/
+    #banner .container-btn-reserve {
+        margin: 20px auto 50px auto;
+
+    }
+    .banner-title {
+        margin-top: 80px;
+    }
+    #banner .left-contain {
+        margin-left: 30px;
+        margin-top: 0px
+    }
+
+    /*Information Section*/
+    #information .panel_ {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    /*Film information*/
+
+    /*Films*/
+    #cheduledfilms .img-box ul li {
+        opacity: 1;
+    }
+
+    
+    /*Reserve seat(s)*/
+     #reserve-seat {
+         padding: 0px;
+     }
+    #reserve-seat .form-block {
+        padding: 40px auto 40px auto;
+        
+    }
+
+    /*Newsletters*/
+    #newsletter input[type="email"] {
+        width: 70%;
+    }
+      
+}
+
+/*-------------- End Medias Query for Tablettes --------------*/
